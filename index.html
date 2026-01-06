@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hair Soares Almeida</title>
   <link rel="icon" type="image/jpg" href="floyd6.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  
   <style>
     body {
       margin: 0;
@@ -12,6 +14,25 @@
       background-color: #1a1a1a;
       color: #e0e0e0;
     }
+
+    /* Estilo do Título com Brilho Dourado Metálico */
+    .golden-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin: 20px 0;
+      background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.3));
+      animation: shine 3s infinite linear;
+      background-size: 200% auto;
+    }
+
+    @keyframes shine {
+      to { background-position: 200% center; }
+    }
+
     header {
       background: url("floyd7.jpg") no-repeat center center;
       background-size: cover;
@@ -47,37 +68,30 @@
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
-    h1, h2, h3 {
+    h2, h3 {
       color: #ffd700;
       text-align: center;
       text-transform: uppercase;
     }
-    .service {
-      margin-bottom: 40px;
-    }
-    .highlight {
-      font-weight: bold;
-      color: #ffcc00;
-    }
-    .promo-title {
-      font-size: 1.8rem;
-      font-weight: 900;
-      color: #ffd700;
-      margin: 40px 0;
-      line-height: 1.2;
-      text-align: center;
+
+    /* Seção Sobre o Studio */
+    .about-section {
+      background: #222;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #bf953f;
+      margin-bottom: 30px;
+      line-height: 1.8;
+      text-align: justify;
     }
 
-    /* Galeria em Duplas */
     .gallery-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
       margin: 30px 0;
     }
-    .gallery-item {
-      text-align: center;
-    }
+    .gallery-item { text-align: center; }
     .gallery-item img {
       width: 100%;
       height: 300px;
@@ -92,20 +106,14 @@
       font-weight: bold;
     }
 
-    /* Boxes de Produtos e Serviços */
     .product-box {
       background: #333;
       padding: 20px;
       border-radius: 12px;
       margin-bottom: 25px;
       border-left: 5px solid #ffd700;
-      line-height: 1.6;
-    }
-    .product-box ul {
-      padding-left: 20px;
     }
 
-    /* Botões */
     .buttons {
       display: flex;
       flex-wrap: wrap;
@@ -136,15 +144,6 @@
       border-radius: 12px;
       text-align: center;
     }
-    .location-section iframe {
-      width: 100%;
-      max-width: 600px;
-      height: 300px;
-      border: 0;
-      border-radius: 8px;
-      margin-top: 15px;
-    }
-
     footer {
       margin-top: 40px;
       padding: 30px;
@@ -165,104 +164,53 @@
   </header>
 
   <main>
-    <h1>Bem-vindo ao Hair Soares Almeida</h1>
-    <p style="text-align:center; font-size: 1.1rem;">
-      Um espaço criado para transformar sua beleza e autoestima ✨<br>
-      Serviços personalizados em um ambiente acolhedor e sofisticado.
-    </p>
+    <h1 class="golden-title">Bem-vindo ao Hair Soares Almeida</h1>
+    
+    <div class="about-section">
+      <strong>Studio Fabiane Almeida</strong> é um espaço dedicado à beleza e bem-estar, oferecendo serviços de alisamento e mega-hair bio humano com atendimento personalizado. Trabalhamos com horário agendado, de domingo a domingo, para garantir conforto e conveniência. Além disso, contamos com lojas oficiais na <strong>Shopee, Mercado Livre e Amazon</strong>, além de um site especializado na venda de telas para auto aplicação. Nosso estúdio home care foi planejado para proporcionar um ambiente acolhedor e de alta qualidade.
+    </div>
 
-    <h2 class="promo-title">
-      TRABALHAMOS COM APLIQUES PREMIUM DE ALTA DURABILIDADE. ENVIAMOS PARA TODO O BRASIL 📦✈️
-    </h2>
+    <h2 style="font-size: 1.5rem;">TRABALHAMOS COM APLIQUES PREMIUM. ENVIAMOS PARA TODO O BRASIL 📦✈️</h2>
 
     <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="aplique2.jpeg" alt="Como é o mega hair">
-        <p>COMO É O MEGA HAIR</p>
-      </div>
-      <div class="gallery-item">
-        <img src="cliente2.jpeg" alt="Aplicação em cliente">
-        <p>APLICADO NA CLIENTE</p>
-      </div>
-      <div class="gallery-item">
-        <img src="aplique3.jpeg" alt="Detalhe do produto">
-        <p>NOSSO APLIQUE PREMIUM</p>
-      </div>
-      <div class="gallery-item">
-        <img src="cliente1.jpeg" alt="Resultado final">
-        <p>RESULTADO FINAL</p>
-      </div>
+      <div class="gallery-item"><img src="aplique2.jpeg" alt="Mega hair"><p>COMO É O MEGA HAIR</p></div>
+      <div class="gallery-item"><img src="cliente2.jpeg" alt="Aplicação"><p>APLICADO NA CLIENTE</p></div>
+      <div class="gallery-item"><img src="aplique3.jpeg" alt="Produto"><p>NOSSO APLIQUE PREMIUM</p></div>
+      <div class="gallery-item"><img src="cliente1.jpeg" alt="Resultado"><p>RESULTADO FINAL</p></div>
     </div>
 
     <h2>Nossos Serviços</h2>
-
     <div class="product-box">
       <h3>🔹 Progressiva</h3>
-      <p><span class="highlight">👉 Tempo médio:</span> 2 a 3 horas.</p>
-      <p><span class="highlight">👉 Resultados:</span> Cabelo alinhado, brilho intenso e redução de frizz.</p>
-      <p><span class="highlight">👉 Vantagens:</span> Praticidade e durabilidade de até 6 meses.</p>
+      <p>Brilho intenso e redução de frizz. Durabilidade de até 6 meses.</p>
     </div>
-
     <div class="product-box">
       <h3>🔹 Alisamento Orgânico</h3>
-      <p><span class="highlight">👉 Sem Formol:</span> Utilizamos ácidos naturais (lático/tanino).</p>
-      <p><span class="highlight">👉 Resultados:</span> Fios disciplinados com aspecto natural e balanço.</p>
+      <p>Sem formol, fios disciplinados com aspecto natural.</p>
     </div>
-
     <div class="product-box">
-      <h3>🔹 Mega Hair Bio Humano – Fita Invisível</h3>
-      <p><span class="highlight">👉 Diferencial:</span> Fixação que não agride os fios e visual idêntico ao humano.</p>
-      <p><span class="highlight">👉 Vantagem:</span> Mais acessível, leve e confortável para o dia a dia.</p>
-    </div>
-
-    <h2>Opções de Apliques (Venda)</h2>
-    
-    <div class="product-box">
-      <h3>🔹 Aplique 100g (Com Serviço)</h3>
-      <p>Valor: <strong>R$ 189,99</strong> (Aplicação inclusa)</p>
-    </div>
-
-    <div class="product-box">
-      <h3>🔹 Kit 300g (Cabelão Completo)</h3>
-      <p>De: <del>R$ 499,99</del> por <span class="highlight">R$ 449,90</span></p>
-      <p>Perfeito para transformação total de volume e comprimento.</p>
+      <h3>🔹 Mega Hair Bio Humano</h3>
+      <p>Técnica de fita invisível, leve e imperceptível.</p>
     </div>
 
     <div class="buttons">
       <a href="https://wa.me/5562991484650" target="_blank" class="btn btn-wpp">WhatsApp</a>
-      <a href="https://instagram.com/hairbyfabianealmeida" target="_blank" class="btn btn-form">Instagram</a>
+      <a href="https://instagram.com/hairbyfabianealmeida" target="_blank" class="btn btn-insta">Instagram</a>
       <a href="https://www2.correios.com.br/sistemas/precosPrazos/default.cfm?cepOrigem=74313690" target="_blank" class="btn btn-frete">Simular Frete</a>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdT07Z2Fyelpt_U8L1razZ-WipWwaDnbSSaQulcjgw2TrWojw/viewform?usp=header" target="_blank" class="btn btn-insta">Fazer Pedido</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdT07Z2Fyelpt_U8L1razZ-WipWwaDnbSSaQulcjgw2TrWojw/viewform?usp=header" target="_blank" class="btn btn-form">Fazer Pedido</a>
     </div>
 
     <div class="location-section">
       <h2>Nossa Localização</h2>
-      <p><strong>Studio Hair by Fabiane Almeida</strong></p>
-      <p>Rua U-79 Q, 55 lote 18 - Vila Uniao, Goiânia - GO, 74313-690</p>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.0624898144934!2d-49.3039659!3d-16.7137351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935efad78465d665%3A0xc3f66810c95015b6!2sR.%20U-79%2C%2055%20-%20Vila%20Uniao%2C%20Goi%C3%A2nia%20-%20GO%2C%2074313-690!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
-        width="100%" 
-        height="300" 
-        style="border:0; border-radius: 8px;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+      <p>Rua U-79 Q, 55 lote 18 - Vila Uniao, Goiânia - GO</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.000000000000!2d-49.2900000!3d-16.7100000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQyJzM2LjAiUyA0OcKwMTcnMjQuMCJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000" width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+      <br><br>
+      <a href="https://maps.google.com/?q=Rua+U-79+Vila+Uniao+Goiania" target="_blank" class="btn btn-insta" style="color: #000;">ABRIR NO GPS</a>
     </div>
-
-    <a href="https://www.google.com/maps/search/?api=1&query=Studio+Hair+by+Fabiane+Almeida+Vila+Uniao+Goiania" 
-   target="_blank" 
-   class="btn btn-insta" 
-   style="margin-top: 10px; background-color: #ffd700; color: #000;">
-   ABRIR NO GPS (GOOGLE MAPS)
-</a>
   </main>
 
-
   <footer>
-    © 2025 Hair Soares Almeida – Apliques & Extensões<br>
-    Transformando Vidas através da Beleza.
+    © 2025 Hair Soares Almeida – Transformando Vidas através da Beleza.
   </footer>
-
 </body>
 </html>
