@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hair Soares Almeida</title>
-  <!-- Ícone do site -->
   <link rel="icon" type="image/jpg" href="floyd_icon1.jpg">
   <style>
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
-      background-color: #fff0f5; /* rosa bem suave */
-      color: #333;
+      background-color: #1a1a1a; /* Preto escuro */
+      color: #e0e0e0; /* Cinza claro para o texto */
     }
     header {
       background: url("floyd1.jpg") no-repeat center center;
@@ -26,7 +25,7 @@
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(255,192,203,0.3);
+      background: rgba(0, 0, 0, 0.5); /* Overlay preto semi-transparente */
     }
     .logo {
       position: relative;
@@ -37,19 +36,19 @@
       width: 160px;
       height: 150px;
       border-radius: 50%;
-      box-shadow: 0 4px 15px rgba(0.3,0,0,0.3);
-      border: 4px solid #fff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      border: 4px solid #ffd700; /* Dourado */
     }
     main {
       max-width: 900px;
       margin: 40px auto;
       padding: 20px;
-      background: #fff;
+      background: #282828; /* Cinza escuro para o conteúdo principal */
       border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
     h1, h2 {
-      color: #d63384;
+      color: #ffd700; /* Dourado para títulos */
       text-align: center;
     }
     .service {
@@ -63,7 +62,7 @@
     }
     .highlight {
       font-weight: bold;
-      color: #c2185b;
+      color: #ffcc00; /* Dourado mais claro para destaques */
     }
     .image-section {
       text-align: center;
@@ -72,7 +71,7 @@
     .image-section img {
       max-width: 100%;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     }
     .buttons {
       display: flex;
@@ -95,19 +94,72 @@
       background: #1ebe57;
     }
     .btn-insta {
-      background: #e1306c;
+      background: #ffd700; /* Dourado */
+      color: #1a1a1a; /* Texto preto para o botão do Insta */
     }
     .btn-insta:hover {
-      background: #c42b5f;
+      background: #e6b800; /* Dourado mais escuro */
     }
     footer {
       margin-top: 40px;
       padding: 20px;
-      background: #ffe4e9;
+      background: #1a1a1a; /* Preto escuro */
       font-size: 0.9rem;
-      color: #444;
+      color: #999; /* Cinza para o texto do rodapé */
       text-align: center;
     }
+    .location-section {
+      margin-top: 50px;
+      padding: 20px;
+      background: #282828; /* Cinza escuro */
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    .location-section h2 {
+      margin-bottom: 20px;
+      color: #ffd700;
+    }
+    .location-section iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      border: 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    /* Estilos para a segunda parte (Apliques) */
+    .header-apliques {
+      background: #1a1a1a; /* Preto escuro */
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    .header-apliques h1 {
+      color: #ffd700; /* Dourado */
+      margin: 0;
+    }
+    .product-box {
+      background: #333; /* Cinza um pouco mais claro */
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      color: #e0e0e0;
+    }
+    .product-box h3 {
+      color: #ffcc00; /* Dourado mais claro */
+    }
+    .btn-form {
+      background: #ffd700; /* Dourado */
+      color: #1a1a1a; /* Texto preto */
+    }
+    .btn-form:hover { background: #e6b800; }
+
+    .btn-frete {
+      background: #6a5acd; /* Mantendo um tom de roxo/azul para frete, mas pode ser alterado para combinar */
+    }
+    .btn-frete:hover { background: #5848b8; }
   </style>
 </head>
 <body>
@@ -120,12 +172,11 @@
   <main>
     <h1>Bem-vindo ao Hair Soares Almeida</h1>
     <p style="text-align:center;">
-      Um espaço criado para transformar sua beleza e autoestima 🌸  
-      Trabalhamos com dedicação, cuidado e os melhores profissionais, 
-      oferecendo serviços personalizados em um ambiente acolhedor e sofisticado.  
+      Um espaço criado para transformar sua beleza e autoestima ✨
+      Trabalhamos com dedicação, cuidado e os melhores profissionais,
+      oferecendo serviços personalizados em um ambiente acolhedor e sofisticado.
     </p>
 
-    <!-- Serviços -->
     <div class="service">
       <h2>Progressiva</h2>
       <p><span class="highlight">👉 Tempo médio:</span> 2 a 3 horas, dependendo do cabelo.</p>
@@ -179,153 +230,48 @@
       <p><span class="highlight">👉 Resultado:</span> Visual bonito, alinhado e saudável.</p>
     </div>
 
-
-
-    <!-- Botões -->
     <div class="buttons">
       <a href="https://wa.me/5562991484650" target="_blank" class="btn btn-wpp">Agendar no WhatsApp</a>
       <a href="https://instagram.com/SEU_USUARIO" target="_blank" class="btn btn-insta">Instagram</a>
+    </div>
+
+    <div class="location-section">
+      <h2>Nossa Localização</h2>
+      <p>Studio Hair by Fabiane Almeida</p>
+      <p>Rua U-79 Q, 55 lote 18 - Vila Uniao, Goiânia - GO, 74313-690</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3744.156645934522!2d-49.3090875!3d-16.7904396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef7d7f7e9b1d9%3A0xc4e5d61e9b2c3a5!2sStudio%20Hair%20by%20Fabiane%20Almeida!5e0!3m2!1spt-BR!2sbr!4v1701360000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </main>
 
   <footer>
     © 2025 Hair Soares Almeida - Todos os direitos reservados
   </footer>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apliques – Hair Soares Almeida</title>
-  <link rel="icon" type="image/jpg" href="floyd_icon1.jpg">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #fff0f7;
-      color: #333;
-    }
-
-    header {
-      background: #ffb6d5;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-    }
-
-    header h1 {
-      color: #b3006b;
-      margin: 0;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      color: #d63384;
-      margin-top: 25px;
-    }
-
-    .product-box {
-      background: #ffe6ef;
-      padding: 15px;
-      border-radius: 12px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    }
-
-    .product-box ul {
-      line-height: 1.7;
-    }
-
-    .image {
-      text-align: center;
-      margin: 25px 0;
-    }
-
-    .image img {
-      max-width: 30%;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      margin: 10px 0;
-      border-radius: 30px;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn-wpp {
-      background: #25d366;
-    }
-    .btn-wpp:hover { background: #19b457; }
-
-    .btn-form {
-      background: #d63384;
-    }
-    .btn-form:hover { background: #b02a6a; }
-
-    .btn-frete {
-      background: #6a5acd;
-    }
-    .btn-frete:hover { background: #5848b8; }
-
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      background: #ffe4e9;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #444;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
+  <header class="header-apliques">
     <h1>Apliques e Extensões – Hair Soares Almeida</h1>
   </header>
 
   <main>
-
     <p style="text-align:center; font-size:1.1rem;">
-      Trabalhamos com apliques premium de alta durabilidade.  
+      Trabalhamos com apliques premium de alta durabilidade.
       Enviamos para todo o Brasil 📦✈️
     </p>
 
-
-
-    <!-- FOTO 2 -->
     <div class="image">
       <img src="aplique2.jpeg" alt="Fita adesiva do aplique">
       <img src="aplique3.jpeg" alt="Fita adesiva do aplique">
     </div>
 
-    <!-- FOTO 3 -->
     <div class="image">
       <img src="aplique2.jpeg" alt="Fita adesiva do aplique">
        <img src="cliente2.jpeg" alt="Fita adesiva do aplique">
     </div>
 
-    <!-- FOTO 4 -->
     <div class="image">
       <img src="aplique3.jpeg" alt="Fita adesiva do aplique">
       <img src="cliente1.jpeg" alt="Resultado final do mega hair">
     </div>
 
-
-
-    <!-- PRODUTOS -->
     <h2>Opções de Apliques</h2>
 
     <div class="product-box">
@@ -350,43 +296,36 @@
     <div class="product-box">
       <h3>🔹 Kit 300g (cabelão completo)</h3>
       <p><strong>Valor normal:</strong> R$ 499,99</p>
-      <p><strong>Promoção:</strong> 3 telas de 100g por <span style="color:#d63384; font-weight:bold;">R$ 449,90</span></p>
+      <p><strong>Promoção:</strong> 3 telas de 100g por <span style="color:#ffcc00; font-weight:bold;">R$ 449,90</span></p>
       <ul>
         <li>Volume total e comprimento completo</li>
         <li>Perfeito para transformação completa</li>
       </ul>
     </div>
 
-
-    <!-- FRETE -->
     <h2>Calcular Frete</h2>
     <p>Para simular o valor do Sedex para sua região, clique abaixo:</p>
 
-    <a href="https://www2.correios.com.br/sistemas/precosPrazos/" 
-       target="_blank" 
+    <a href="https://www2.correios.com.br/sistemas/precosPrazos/"
+       target="_blank"
        class="btn btn-frete">Simular Frete Sedex</a>
 
-
-    <!-- FORMULÁRIO -->
     <h2>Finalizar Pedido</h2>
     <p>Para encomendar seu aplique, preencha o formulário abaixo:</p>
 
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdT07Z2Fyelpt_U8L1razZ-WipWwaDnbSSaQulcjgw2TrWojw/viewform?usp=header" 
-       target="_blank" 
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdT07Z2Fyelpt_U8L1razZ-WipWwaDnbSSaQulcjgw2TrWojw/viewform?usp=header"
+       target="_blank"
        class="btn btn-form">Formulário de Pedido</a>
 
     <br>
 
-    <!-- WHATSAPP -->
     <a href="https://wa.me/5562991484650" target="_blank" class="btn btn-wpp">
       Falar no WhatsApp
     </a>
-
   </main>
 
   <footer>
-    © 2025 Hair Soares Almeida – Apliques & Extensões  
+    © 2025 Hair Soares Almeida – Apliques & Extensões
   </footer>
-
 </body>
 </html>
